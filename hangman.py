@@ -1,4 +1,7 @@
 import random
+from word_list import words
+
+
 stages = ['''
   +---+
   |   |
@@ -56,10 +59,11 @@ stages = ['''
 =========
 ''']
 
-word_list = ["aardvark", "baboon", "camel"]
+word_list = words
 lives = 6
 chosen_word = random.choice(word_list)
-print(chosen_word)
+print(f"It is a {len(chosen_word)} word. Guess wisely.")
+
 blank = ""
 
 
